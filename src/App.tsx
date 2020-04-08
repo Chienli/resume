@@ -1,23 +1,19 @@
-import React from 'react';
-import styled from "styled-components";
-import Button from '@material-ui/core/Button';
+import React from "react";
+import PropTypes from "prop-types";
+import {Container} from "@material-ui/core";
 
-
-const Resume = styled.div`
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
-`
-
-function App() {
+const App = props => {
   return (
-    <div className="App">
-      <Resume />
-      <Button variant="contained" color="primary">
-      你好，世界
-    </Button>
+    <div>
+      <Container maxWidth="lg">
+        Hello , world !
+      </Container>
     </div>
   );
-}
+};
+
+App.propTypes = {
+
+};
 
 export default App;
